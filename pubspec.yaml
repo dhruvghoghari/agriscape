@@ -1,0 +1,47 @@
+name: agriscape
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment: 
+  sdk: '>=3.3.3 <4.0.0'
+
+dependencies: 
+  cupertino_icons: ^1.0.6
+  # for APi caling
+  dio: ^5.4.3+1
+  # for State management
+  get: 4.6.6
+  # for Responsive design
+  flutter_screenutil: ^5.9.0
+  # for show dots images
+  dots_indicator: ^3.0.0
+  # for local storage
+  shared_preferences: ^2.1.2
+  # for show onboarding screen
+  smooth_page_indicator: ^1.1.0
+
+
+  flutter: 
+    sdk: flutter
+
+dev_dependencies: 
+  flutter_lints: ^3.0.0
+  flutter_test: 
+    sdk: flutter
+
+flutter: 
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/img/
+    - assets/logo/
+
+  fonts:
+    - family: Oswald
+      fonts:
+        - asset: assets/fonts/Oswald-Regular.ttf
+
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf

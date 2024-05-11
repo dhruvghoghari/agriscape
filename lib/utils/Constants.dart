@@ -1,0 +1,6 @@
+class Constants
+{
+  static String baseUrl = "https://boring-davinci.217-174-245-235.plesk.page/api/";
+  static String token =  "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2JvcmluZy1kYXZpbmNpLjIxNy0xNzQtMjQ1LTIzNS5wbGVzay5wYWdlL2FwaS9sb2dpbiIsImlhdCI6MTcxNTAwMDg5MywiZXhwIjo2MTcxNTAwMDgzMywibmJmIjoxNzE1MDAwODkzLCJqdGkiOiJNOVFtYVdRM01FaDVjekV5Iiwic3ViIjoiNSIsInBydiI6IjE3NjIyYjNkMmNkZDgyYmE5MTMyMDNiMGJiMDk5YmRhZjAyNGRmNmQifQ.ddSTDYCLfjzjJqV-2LTsbcl0iTrVO8ts5mg999qz6AY";
+}
+
