@@ -62,19 +62,20 @@ class OtpView extends GetView<OtpController> {
                         SizedBox(height: 290.h),
                         Button(btnText: submit,
                             onClick: (){
-                          controller.api.verifyOtp(
-                            otp: controller.otpController.text,
-                          )!.then((value) {
-                            if(controller.isLogin == true)
-                              {
-                                AppTheme.getSnackBar(message: value['msg']);
-                              }
-                            else
-                              {
-                                AppTheme.getSnackBar(message: value['msg']);
-                              }
-                          });
-                            })
+                          // controller.api.verifyOtp(
+                          //   otp: controller.otpController.text,
+                          // )!.then((value) {
+                          //   if(controller.isLogin == true)
+                          //     {
+                          //       AppTheme.getSnackBar(message: value['msg']);
+                          //     }
+                          //   else
+                          //     {
+                          //       AppTheme.getSnackBar(message: value['msg']);
+                          //     }
+                          // });
+                            }
+                            )
                       ],
                     ))
               ],

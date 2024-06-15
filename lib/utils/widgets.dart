@@ -27,7 +27,6 @@ class Button extends StatelessWidget {
           Container(
             height: 50.h,
             width: 335.w,
-            // padding:  const EdgeInsets.symmetric(vertical: 15.0,horizontal: 155.0).r,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(25.0).w,
               gradient: LinearGradient(
@@ -59,7 +58,7 @@ class Button extends StatelessWidget {
 
 /* CustomTextFormField  */
 class CustomTextFormField extends StatelessWidget {
-  //final String? fieldName;
+
   final GestureTapCallback? onClick;
   final TextEditingController controller;
   final TextInputType keyboardType;
@@ -72,7 +71,6 @@ class CustomTextFormField extends StatelessWidget {
 
   const CustomTextFormField({
     super.key,
-    //this.fieldName,
     this.onClick,
     required this.controller,
     required this.keyboardType,

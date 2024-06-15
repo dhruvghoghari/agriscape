@@ -1,4 +1,3 @@
-import 'package:agriscape/api/api.dart';
 import 'package:agriscape/app/routes/app_pages.dart';
 import 'package:agriscape/utils/apptheme.dart';
 import 'package:flutter/gestures.dart';
@@ -15,6 +14,7 @@ class LoginView extends GetView<LoginController> {
   const LoginView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    LoginController loginController = Get.put(LoginController());
     return Scaffold(
       body:SafeArea(
         child: SingleChildScrollView(
@@ -46,13 +46,13 @@ class LoginView extends GetView<LoginController> {
                   ),),
                 SizedBox(height: 18.h,),
                 Form(
-                  key: controller.loginKey,
+                  key: loginController.loginKey,
                   child: Column(
                     children: [
                       AppTheme.customTitle(text: "Mobile Number"),
                       SizedBox(height: 8.h),
                       CustomTextFormField(
-                        controller: controller.mobileController,
+                        controller: loginController.mobileController,
                         keyboardType: TextInputType.number,
                         hintText:loginTextfiled,
                         obscureText: false,
@@ -86,18 +86,7 @@ class LoginView extends GetView<LoginController> {
                       SizedBox(height: 20.h),
                       Button(btnText: "Get Otp",
                           onClick: (){
-                            // controller.api.userLogin(
-                            //     mobile_number: controller.mobileController.text)!.then((value) async{
-                            //   if(controller.isLogin == true)
-                            //   {
-                            //     AppTheme.getSnackBar(message: value['msg']);
-                            //     Get.toNamed(Routes.OTP);
-                            //   }
-                            //   else
-                            //   {
-                            //     AppTheme.getSnackBar(message: value['msg']);
-                            //   }
-                            // });
+                        loginController.userLogin(mobile:loginController.mobileController.text);
                           })
                     ],
                   ),

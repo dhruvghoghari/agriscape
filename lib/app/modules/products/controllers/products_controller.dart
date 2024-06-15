@@ -17,17 +17,17 @@ class ProductsController extends GetxController {
 
   Api api = Api();
 
-  var data = <GetAllProductsModel>[].obs;
-
-  get() async
-  {
-    data.value = await api.getAllProducts();
-  }
-
-  @override
-  void onInit() async{
-    super.onInit();
-    get();
-  }
+  // var data = <GetAllProductsModel>[].obs;
+  //
+  // get() async
+  // {
+  //   data.value = await api.getAllProducts();
+  // }
+  //
+  // @override
+  // void onInit() async{
+  //   super.onInit();
+  //   get();
+  // }
 
 }

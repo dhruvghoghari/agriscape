@@ -7,8 +7,8 @@ environment:
 
 dependencies: 
   cupertino_icons: ^1.0.6
-  # for APi caling
-  dio: ^5.4.3+1
+  # for APi calling
+  http: ^1.2.1
   # for State management
   get: 4.6.6
   # for Responsive design

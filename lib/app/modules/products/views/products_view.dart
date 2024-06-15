@@ -74,7 +74,7 @@ class _ProductsViewState extends State<ProductsView> {
               SizedBox(height: 15.h),
               Expanded(
                 child: ListView.builder(
-                    itemCount:productsController.data[0].products!.length,
+                    //itemCount:productsController.data[0].products!.length,
                   itemBuilder: (BuildContext context, int index){
                   return Container(
                       decoration: BoxDecoration(
@@ -89,12 +89,12 @@ class _ProductsViewState extends State<ProductsView> {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text(productsController.data[0].products![index].title.toString()
-                                  ,style: TextStyle(
-                                    fontFamily: 'Roboto',
-                                    fontSize: 14.sp,
-                                  ),
-                                ),
+                                // Text(productsController.data[0].products![index].title.toString()
+                                //   ,style: TextStyle(
+                                //     fontFamily: 'Roboto',
+                                //     fontSize: 14.sp,
+                                //   ),
+                                // ),
                               ],
                             ),
                           ],
