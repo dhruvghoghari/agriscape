@@ -63,4 +63,6 @@ class LoginController extends GetxController {
       ex.toString();
     }
   }
+
+  // add comment by pinal
 }
