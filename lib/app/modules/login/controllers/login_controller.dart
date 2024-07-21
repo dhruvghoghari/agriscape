@@ -65,4 +65,5 @@ class LoginController extends GetxController {
   }
 
   // add comment by pinal
+
 }
