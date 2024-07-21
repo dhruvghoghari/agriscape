@@ -64,5 +64,5 @@ class LoginController extends GetxController {
     }
   }
 
-  //add comment by Dhruv
+  //Change comment by Pinal
 }
