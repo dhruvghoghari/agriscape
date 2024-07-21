@@ -1,3 +1,4 @@
+import 'package:agriscape/app/modules/home/controllers/home_controller.dart';
 import 'package:agriscape/app/routes/app_pages.dart';
 import 'package:agriscape/utils/apptheme.dart';
 import 'package:flutter/gestures.dart';
@@ -8,12 +9,14 @@ import '../../../../utils/assets.dart';
 import '../../../../utils/colors.dart';
 import '../../../../utils/strings.dart';
 import '../../../../utils/widgets.dart';
+import '../../home/views/home_view.dart';
 import '../controllers/login_controller.dart';
 
 class LoginView extends GetView<LoginController> {
   const LoginView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    HomeController homeController = Get.put(HomeController());
     LoginController loginController = Get.put(LoginController());
     return Scaffold(
       body:SafeArea(
@@ -86,8 +89,8 @@ class LoginView extends GetView<LoginController> {
                       SizedBox(height: 20.h),
                       Button(btnText: "Get Otp",
                           onClick: (){
-                        loginController.userLogin(mobile:loginController.mobileController.text);
-                          })
+                        Get.to(() => HomeView());
+                      })
                     ],
                   ),
                 )
@@ -98,4 +101,7 @@ class LoginView extends GetView<LoginController> {
       )
     );
   }
+
+
+  // added by Pinal
 }
